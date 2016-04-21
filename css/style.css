@@ -1,0 +1,23 @@
+body
+#sidebar {
+	text-align: center;
+	float: right;
+	width: 50%;
+	margin-top: 20px;
+	padding: 1em;
+	border­right: 1px dotted #ccc;
+	letter-spacing: 1.5px;
+}
+
+body footer {
+	clear: both; /* The clear property specifies which side(s) of an element other
+				 floating elements are not allowed. */
+	margin: 0;
+	font-variant: small-caps;
+	font-size: .813em;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	border-top: 1px dotted #cccccc;
+	background-color:#00a665;
+}
