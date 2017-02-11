@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <head>
-	<meta charset = "utf-8" />
-	<meta name = "author" content = "Sean Park, Justin Chang, Andrew Kim, Rachel Kim, Killian Huang" />
-	<meta name = "description" content = "Hayden Shoes Data Dashboard" />
+	<meta charset="utf-8"/>
+	<meta name="author​" content="sjark consulting">
+	<meta name="keywords" content="Hayden Shoes Dashboard">
+	<meta name="description" content="Hayden Shoes Dashboard">
 
-	<!-- Import stylesheets -->
-	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
-
-	<!-- Import .js files -->
-	<script  type="text/javascript" src="js/jquery-2.2.1.min.js"> </script>
-	<script  type="text/javascript" src="js/scripts.js"> </script>
-	<script  type="text/javascript" src="js/jquery-ui.js"></script>
-	<script  type="text/javascript" src="js/highcharts.js"></script>
-	<script  type="text/javascript" src="js/modules/exporting.js"></script>
-
-	<title>Hayden Shoes Data Dashboard</title>
+	<title>Hayden Shoes</title>
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css"/>
 </head>
 
+
 <body>
-
-	<div id="top_bar">
-	<div id="top_row"> <!-- Navigation bar + image. Same throughout all webpages. -->
-		<div id="image">
-			<h1>Data Dashboard</h1>
-		</div>
-	</div> <!-- Close top_row -->
-	</div>
 	
-	<div id="sidebar">
-		
-		<div id="user_info">
+	<fieldset id="login-border">
+		<legend><img src="images/haydenshoes.png" style="margin:auto"></legend><br/>
+		<div id="login">
+			
+			<h1>Dashboard</h1>
+
+			<form name="login" action="executive.html">
+				<input class="userinput" type="text" name="username" maxlength="250" placeholder="username"><br/>
+				<input class="userinput" type="password" id="password" name="password" maxlength="20" placeholder="password"><br/>
+
+				<div class="checkbox">
+					<input type="checkbox" name="remember" value="no">
+					<label>remember me</label><br/><br/>
+				</div>
+
+				<button class="btn" action="executive.html">Login</button>
+			</form>
+
+			<br/><br/>
+			
+			<div id="presentedby">
+				<div id="ptext">
+					<a/>Powered<br/>By:</a>
+				</div>
+				<div id="sjark">
+					<img src="images/sjark.png" style="width:100px"><br/>
+				</div>
+			</div>
+
+
 		</div>
+	</fieldset>
 
-		<div id="tabs">
-		</div>
-
-	</div>
-
-	<div id="content">
-		Content
-	</div>
-
-	<footer>
-	</footer>
 
 </body>
+<!---
+<div id="temp">
+	</div>
+	<div id="login">
+		<img src="images/haydenshoes.png">	
+		<h1>Dashboard</h1>
 
+		<form name="login">
+			<input class="userinput" type="text" name="username" maxlength="250" placeholder="username"><br/>
+			<input class="userinput" type="password" id="password" name="password" maxlength="20" placeholder="password"><br/>
+
+			<div class="checkbox">
+				<input type="checkbox" name="remember" value="no">
+				<label>remember me</label><br/><br/>
+			</div>
+
+			<button class="btn" action="executive.html">Login</button>
+		</form>
+
+	</div>
+
+-->
 </html>
